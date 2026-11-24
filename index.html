@@ -40,6 +40,9 @@
 
     a { color: inherit; text-decoration: none; }
     button { font: inherit; }
+    h1, h2, .brand {
+      font-family: "Sandoll Nemony2", "Sandoll Nemony 2", "Pretendard", "Noto Sans KR", sans-serif;
+    }
 
     .wrap { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
 
@@ -87,7 +90,7 @@
       text-transform: uppercase;
     }
     .eyebrow::before { content: ""; width: 23px; height: 1px; background: currentColor; }
-    h1 { margin: 18px 0 16px; font-size: clamp(3.2rem, 8vw, 6.7rem); line-height: 1.03; letter-spacing: -.075em; font-weight: 850; }
+    h1 { margin: 18px 0 16px; font-size: clamp(3.2rem, 8vw, 6.7rem); line-height: 1.12; letter-spacing: -.045em; font-weight: 800; }
     h1 span {
       color: var(--accent);
       background: linear-gradient(105deg, var(--accent), #8cb8ff);
@@ -238,7 +241,7 @@
     <nav class="nav" aria-label="페이지 메뉴">
       <a href="#about">소개</a>
       <a href="#interests">관심사</a>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">☼ 테마</button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">☼ 라이트 모드</button>
     </nav>
   </header>
 
@@ -246,8 +249,8 @@
     <section class="wrap hero" id="home">
       <div>
         <div class="eyebrow">Nice to meet you</div>
-        <h1>안녕하세요,<br><span>김건희 ->로컬에서 수정함</span>입니다.</h1>
-        <p class="intro">경영정보학과에서 배우고, 게임과 영화에서 영감을 얻어요. 일렉 기타와 통기타를 연주하며 저만의 리듬을 만들어갑니다.</p>
+        <h1>안녕하세요,<br><span>김건희</span>입니다.</h1>
+        <p class="intro">경영정보학과에서 배우며 음악 듣기와 기타 연주를 즐겨요. 특히 GTA 시리즈를 좋아하고, 게임과 영화도 정말 좋아합니다.</p>
         <div class="hero-actions">
           <a class="button primary" href="#about">저를 더 알아보기 <span aria-hidden="true">↓</span></a>
           <a class="button" href="#interests">나의 관심사</a>
@@ -255,7 +258,7 @@
       </div>
       <div class="hero-art" aria-label="김건희 이름의 첫 글자를 담은 그래픽">
         <div class="monogram" aria-hidden="true">건</div>
-        <div class="art-label">GAMES · FILMS · GUITARS</div>
+        <div class="art-label">GTA · MUSIC · FILMS</div>
       </div>
     </section>
 
@@ -280,8 +283,8 @@
         </article>
         <article class="card">
           <div class="card-icon" aria-hidden="true">♫</div>
-          <h3>기타 연주</h3>
-          <p>일렉 기타와 통기타를 연주하며 음악을 즐겨요.</p>
+          <h3>음악과 기타</h3>
+          <p>좋아하는 음악을 듣고 일렉 기타와 통기타를 연주해요.</p>
         </article>
       </div>
     </section>
@@ -298,7 +301,7 @@
         <article class="card">
           <div class="card-icon" aria-hidden="true">🎮</div>
           <h3>게임</h3>
-          <p>다양한 세계와 이야기를 경험할 수 있는 게임이 좋아요.</p>
+          <p>게임을 정말 좋아하고, 그중에서도 GTA 시리즈를 가장 좋아해요.</p>
         </article>
         <article class="card">
           <div class="card-icon" aria-hidden="true">🎬</div>
@@ -308,14 +311,14 @@
         <article class="card">
           <div class="card-icon" aria-hidden="true">🎸</div>
           <h3>일렉 &amp; 통기타</h3>
-          <p>때로는 강렬하게, 때로는 잔잔하게 기타를 연주해요.</p>
+          <p>음악 듣기를 즐기고 일렉 기타와 통기타를 연주해요.</p>
         </article>
       </div>
     </section>
 
     <section class="wrap section">
       <div class="quote">
-        <p>좋아하는 것들을 하나씩 알아가며<br><span>나만의 이야기를 만들어가는 중!</span></p>
+        <p>좋아하는 음악과 게임, 영화 속에서<br><span>나만의 즐거움을 찾아가는 중!</span></p>
         <div class="quote-mark" aria-hidden="true">✳</div>
       </div>
     </section>
@@ -323,7 +326,7 @@
 
   <footer class="wrap">
     <span>김건희 · 경영정보학과</span>
-    <span>게임, 영화, 그리고 기타와 함께</span>
+    <span>음악 · GTA · 영화 · 기타와 함께</span>
   </footer>
 
   <script>
@@ -332,7 +335,7 @@
     themeToggle.addEventListener("click", () => {
       const isLight = document.body.classList.toggle("light-mode");
       themeToggle.setAttribute("aria-pressed", String(isLight));
-      themeToggle.innerHTML = isLight ? "☾ 테마" : "☼ 테마";
+      themeToggle.innerHTML = isLight ? "☾ 다크 모드" : "☼ 라이트 모드";
     });
   </script>
 </body>
