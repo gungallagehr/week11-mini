@@ -163,7 +163,7 @@
     .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
     .section-heading h2 { margin: 8px 0 0; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -.055em; }
     .section-heading p { max-width: 360px; margin: 0; color: var(--muted); font-size: .9rem; }
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
     .card {
       min-height: 210px;
       padding: 25px;
@@ -290,7 +290,7 @@
           <div class="eyebrow">Things I love</div>
           <h2>좋아하는 것들</h2>
         </div>
-        <p>좋아하는 세계에 푹 빠져 보내는 시간이 제 일상에 활기를 더해줘요.</p>
+        <p>좋아하는 세계에 푹 빠지고 맛있는 음식을 즐기는 시간이 제 일상에 활기를 더해줘요.</p>
       </div>
       <div class="cards">
         <article class="card">
@@ -307,6 +307,11 @@
           <div class="card-icon" aria-hidden="true">🎸</div>
           <h3>일렉 &amp; 통기타</h3>
           <p>음악 듣기를 즐기고 일렉 기타와 통기타를 연주해요.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🍜</div>
+          <h3>먹는 즐거움</h3>
+          <p>라면은 최대 5개, 치킨은 혼자 한 마리, 피자는 라지 한 판까지 먹을 만큼 먹는 걸 정말 좋아해요.</p>
         </article>
       </div>
     </section>
